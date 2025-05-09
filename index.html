@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кешке шақыру</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px gold;
+    }
+    h1 {
+      text-align: center;
+      color: gold;
+    }
+    .info-block {
+      margin: 20px 0;
+    }
+    .info-title {
+      font-weight: bold;
+      color: #ffdf80;
+    }
+    #passwordBox {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      background-color: gold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+    }
+    #revealedPassword {
+      font-size: 18px;
+      color: lightgreen;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Шақыру</h1>
+    <p>Құрметті Втипо 37 тобының жігіттері!</p>
+    <p>Біздің топтың аруларының атынан сіздерді шын жүректен 09.05.2025 күні сағат 18:00-де болатын мерекелік кешке шақырамыз!</p>
+    
+    <div class="info-block">
+      <p class="info-title">Мекен-жайы:</p>
+      <p>Мекен жайы белгіленген күні білесіздер</p>
+    </div>
+
+    <div class="info-block">
+      <p class="info-title">Дресс-код:</p>
+      <p>Black & White Classic (Классикалық қара-ақ түсті киім үлгісі)</p>
+    </div>
+
+    <div class="info-block">
+      <p class="info-title">Өздеріңізбен бірге алыңыз:</p>
+      <ul>
+        <li>Жақсы көңіл-күй</li>
+        <li>Кішкентай сыйлық</li>
+        <li>Кешке арналған стильді образ</li>
+      </ul>
+    </div>
+
+    <div id="passwordBox">
+      <p class="info-title">Кешке кіру үшін құпиясөз қажет</p>
+      <button onclick="revealPassword()">Құпиясөзді білу</button>
+      <p id="revealedPassword" style="display: none;">Құпиясөз: <strong>PARTY2025</strong></p>
+    </div>
+
+    <p>Келіңіздер, қуанышымызға ортақтасыңыздар!</p>
+    <p style="text-align: right;">Ізгі тілекпен, Втипо 37 тобының қыздары</p>
+  </div>
+
+  <script>
+    function revealPassword() {
+      document.getElementById("revealedPassword").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
